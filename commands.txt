@@ -1,0 +1,3 @@
+hadoop fs -mkdir /WordCountTutorial
+hadoop fs -put ./4300.txt /WordCountTutorial/Input
+hadoop jar ./wc.jar WordCount /WordCountTutorial/Input /WordCountTutorial/Output
