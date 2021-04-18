@@ -7,7 +7,7 @@ HEALTHCHECK CMD curl -f http://localhost:8042/ || exit 1
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
 RUN apt-get update
-RUN apt-get install python3
+RUN apt-get install -y python3
 EXPOSE 8042
 
 CMD ["/run.sh"]
