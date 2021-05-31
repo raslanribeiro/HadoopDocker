@@ -4,7 +4,7 @@
 
 Version 2.0.0 introduces uses wait_for_it script for the cluster startup
 
-# Hadoop Docker
+# Hadoop and Spark Docker
 
 ## Supported Hadoop Versions
 See repository branches for supported hadoop versions
@@ -35,6 +35,9 @@ Run `docker network inspect` on the network (e.g. `dockerhadoop_default`) to fin
 * Datanode: http://<dockerhadoop_IP_address>:9864/
 * Nodemanager: http://<dockerhadoop_IP_address>:8042/node
 * Resource manager: http://<dockerhadoop_IP_address>:8088/
+* Spark Master UI: http://<dockerhadoop_IP_address>:8080/
+* Spark Master: http://<dockerhadoop_IP_address>:7077/
+* Spark Worker: http://<dockerhadoop_IP_address>:8081/
 
 ## Configure Environment Variables
 
